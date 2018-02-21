@@ -1,0 +1,31 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP D24V5F3
+D 500mA Step-Down Voltage Regulator
+K step-down dcdc voltage regulator
+$ENDCMP
+#
+$CMP DRV2667
+D DRV2667 Piezo Haptic Driver with Boost, Digital Front End, and Internal Waveform Memory
+K piezo boost haptic driver
+F http://www.ti.com/lit/ds/symlink/drv2667.pdf
+$ENDCMP
+#
+$CMP DRV8662
+D Piezo Haptic Driver with Integrated Boost Converter
+K piezo boost haptic driver
+F http://www.ti.com/lit/ds/symlink/drv8662.pdf
+$ENDCMP
+#
+$CMP LP2951-N-5.0_SOIC8
+D 100mA Linear LDO Regulator, Low Noise, MicroPower, Fixed Output 5.0V, SO8
+K Linear LDO Regulator 200mA 5V
+F http://www.ti.com/lit/ds/symlink/lp2987.pdf
+$ENDCMP
+#
+$CMP MAX14870_Carrier
+D PWM, Motor Driver, 36V, 2.5A peak
+K full-bridge h-bridge
+$ENDCMP
+#
+#End Doc Library
