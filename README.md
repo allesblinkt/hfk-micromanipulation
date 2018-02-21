@@ -1,5 +1,7 @@
-# Self-Revolving Torus
+# Micromanipulation
 
-Code, mechanical design files (incomplete) and documentation for multiple models of Self-Revolving Tori.
+A workshop given for the Digital Media program of [HfK Bremen](https://www.hfk-bremen.de).
 
+## Documentation
 
+See [Torus Operation](doc/torus_operation.md) for a detailed description.
