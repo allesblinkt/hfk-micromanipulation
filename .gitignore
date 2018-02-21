@@ -1,0 +1,22 @@
+# KiCAD
+*.bak
+*.kicad_pcb-bak
+*.bck
+_autosave*
+_saved*
+*-rescue.lib
+
+# Rhinoceros
+*.rhl
+*.3dmbak
+
+# Windows
+Thumbs.db
+.~*
+
+fab.zip
+
+__MACOSX
+.DS_Store
+
+**/tmp/**
