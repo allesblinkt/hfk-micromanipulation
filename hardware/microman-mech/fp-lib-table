@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name microman-kit)(type KiCad)(uri /home/mys/teaching/hfk-ws17/microman-kit/modules/microman-kit.pretty)(options "")(descr ""))
+)
