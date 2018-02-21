@@ -1,0 +1,425 @@
+EESchema Schematic File Version 4
+LIBS:microman-kit-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title "Micromanipulation"
+Date "2018-02-20"
+Rev "r1"
+Comp "allesblinkt"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L microman-kit:DRV8662 U4
+U 1 1 5A6E90DA
+P 5450 3800
+AR Path="/5A6B9947/5A6E90DA" Ref="U4"  Part="1" 
+AR Path="/5A6D116B/5A6E90DA" Ref="U5"  Part="1" 
+F 0 "U5" H 4800 4600 50  0000 C CNN
+F 1 "DRV8662" H 5000 3050 50  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm" H 5500 2950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/drv2667.pdf" H 4750 5250 50  0001 C CNN
+	1    5450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR072
+U 1 1 5A6E90DB
+P 5450 4700
+AR Path="/5A6B9947/5A6E90DB" Ref="#PWR072"  Part="1" 
+AR Path="/5A6D116B/5A6E90DB" Ref="#PWR082"  Part="1" 
+F 0 "#PWR082" H 5450 4450 50  0001 C CNN
+F 1 "GND" H 5455 4527 50  0000 C CNN
+F 2 "" H 5450 4700 50  0001 C CNN
+F 3 "" H 5450 4700 50  0001 C CNN
+	1    5450 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4550 5350 4600
+Wire Wire Line
+	5350 4600 5450 4600
+Wire Wire Line
+	5550 4600 5550 4550
+Wire Wire Line
+	5450 4550 5450 4600
+Connection ~ 5450 4600
+Wire Wire Line
+	5450 4600 5550 4600
+Wire Wire Line
+	5450 4600 5450 4700
+$Comp
+L device:C C17
+U 1 1 5A6E90DC
+P 4300 4500
+AR Path="/5A6B9947/5A6E90DC" Ref="C17"  Part="1" 
+AR Path="/5A6D116B/5A6E90DC" Ref="C22"  Part="1" 
+F 0 "C22" H 4415 4546 50  0000 L CNN
+F 1 "100n" H 4415 4455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4338 4350 50  0001 C CNN
+F 3 "" H 4300 4500 50  0001 C CNN
+F 4 "X7R, >10 V" H 4300 4500 50  0001 C CNN "Rating"
+	1    4300 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4250 4300 4350
+$Comp
+L device:C C14
+U 1 1 5A6BEB34
+P 5250 2800
+AR Path="/5A6B9947/5A6BEB34" Ref="C14"  Part="1" 
+AR Path="/5A6D116B/5A6BEB34" Ref="C19"  Part="1" 
+F 0 "C19" V 4998 2800 50  0000 C CNN
+F 1 "1u" V 5089 2800 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 5288 2650 50  0001 C CNN
+F 3 "" H 5250 2800 50  0001 C CNN
+F 4 "X7R" H 5250 2800 50  0001 C CNN "Rating"
+	1    5250 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 3950 7700 3950
+Wire Wire Line
+	7700 4050 6250 4050
+$Comp
+L device:R R12
+U 1 1 5A6E90DF
+P 6350 4500
+AR Path="/5A6B9947/5A6E90DF" Ref="R12"  Part="1" 
+AR Path="/5A6D116B/5A6E90DF" Ref="R15"  Part="1" 
+F 0 "R15" H 6420 4546 50  0000 L CNN
+F 1 "10k" H 6420 4455 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 6280 4500 50  0001 C CNN
+F 3 "" H 6350 4500 50  0001 C CNN
+	1    6350 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4250 6350 4250
+Wire Wire Line
+	6350 4250 6350 4350
+$Comp
+L power:GND #PWR073
+U 1 1 5A6E90E0
+P 6350 4700
+AR Path="/5A6B9947/5A6E90E0" Ref="#PWR073"  Part="1" 
+AR Path="/5A6D116B/5A6E90E0" Ref="#PWR083"  Part="1" 
+F 0 "#PWR083" H 6350 4450 50  0001 C CNN
+F 1 "GND" H 6355 4527 50  0000 C CNN
+F 2 "" H 6350 4700 50  0001 C CNN
+F 3 "" H 6350 4700 50  0001 C CNN
+	1    6350 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4650 6350 4700
+$Comp
+L device:L L1
+U 1 1 5A6E90E4
+P 5650 2800
+AR Path="/5A6B9947/5A6E90E4" Ref="L1"  Part="1" 
+AR Path="/5A6D116B/5A6E90E4" Ref="L2"  Part="1" 
+F 0 "L2" V 5840 2800 50  0000 C CNN
+F 1 "4u7" V 5749 2800 50  0000 C CNN
+F 2 "microman-kit:Coilcraft_LPS4018" H 5650 2800 50  0001 C CNN
+F 3 "" H 5650 2800 50  0001 C CNN
+F 4 "LPS4018-472MRC" H 5650 2800 50  0001 C CNN "Part"
+	1    5650 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 2800 5800 3000
+Wire Wire Line
+	5500 2800 5450 2800
+Wire Wire Line
+	5450 2800 5450 3000
+$Comp
+L device:C C13
+U 1 1 5A6BEB8B
+P 4700 5750
+AR Path="/5A6B9947/5A6BEB8B" Ref="C13"  Part="1" 
+AR Path="/5A6D116B/5A6BEB8B" Ref="C18"  Part="1" 
+F 0 "C18" H 4585 5704 50  0000 R CNN
+F 1 "100n" H 4585 5795 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805" H 4738 5600 50  0001 C CNN
+F 3 "" H 4700 5750 50  0001 C CNN
+	1    4700 5750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5400 2800 5450 2800
+Connection ~ 5450 2800
+$Comp
+L power:GND #PWR067
+U 1 1 5A6E90E6
+P 5050 2850
+AR Path="/5A6B9947/5A6E90E6" Ref="#PWR067"  Part="1" 
+AR Path="/5A6D116B/5A6E90E6" Ref="#PWR077"  Part="1" 
+F 0 "#PWR077" H 5050 2600 50  0001 C CNN
+F 1 "GND" H 5055 2677 50  0000 C CNN
+F 2 "" H 5050 2850 50  0001 C CNN
+F 3 "" H 5050 2850 50  0001 C CNN
+	1    5050 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2800 5050 2800
+Wire Wire Line
+	5050 2800 5050 2850
+$Comp
+L power:GND #PWR066
+U 1 1 5A6E90E7
+P 4700 5950
+AR Path="/5A6B9947/5A6E90E7" Ref="#PWR066"  Part="1" 
+AR Path="/5A6D116B/5A6E90E7" Ref="#PWR076"  Part="1" 
+F 0 "#PWR076" H 4700 5700 50  0001 C CNN
+F 1 "GND" H 4705 5777 50  0000 C CNN
+F 2 "" H 4700 5950 50  0001 C CNN
+F 3 "" H 4700 5950 50  0001 C CNN
+	1    4700 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 5950 4700 5900
+Wire Wire Line
+	4700 5600 4700 5550
+$Comp
+L device:C C16
+U 1 1 5A6BEBAA
+P 4400 3350
+AR Path="/5A6B9947/5A6BEBAA" Ref="C16"  Part="1" 
+AR Path="/5A6D116B/5A6BEBAA" Ref="C21"  Part="1" 
+F 0 "C21" V 4550 3400 50  0000 R CNN
+F 1 "100n*" V 4250 3400 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805" H 4438 3200 50  0001 C CNN
+F 3 "" H 4400 3350 50  0001 C CNN
+	1    4400 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR068
+U 1 1 5A6E90EA
+P 4200 3400
+AR Path="/5A6B9947/5A6E90EA" Ref="#PWR068"  Part="1" 
+AR Path="/5A6D116B/5A6E90EA" Ref="#PWR078"  Part="1" 
+F 0 "#PWR078" H 4200 3150 50  0001 C CNN
+F 1 "GND" H 4205 3227 50  0000 C CNN
+F 2 "" H 4200 3400 50  0001 C CNN
+F 3 "" H 4200 3400 50  0001 C CNN
+	1    4200 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3350 4250 3350
+$Comp
+L power:GND #PWR071
+U 1 1 5A6BEBB8
+P 4300 4700
+AR Path="/5A6B9947/5A6BEBB8" Ref="#PWR071"  Part="1" 
+AR Path="/5A6D116B/5A6BEBB8" Ref="#PWR081"  Part="1" 
+F 0 "#PWR081" H 4300 4450 50  0001 C CNN
+F 1 "GND" H 4305 4527 50  0000 C CNN
+F 2 "" H 4300 4700 50  0001 C CNN
+F 3 "" H 4300 4700 50  0001 C CNN
+	1    4300 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4650 4300 4700
+Text Notes 6650 4500 0    47   Italic 0
+10k = 1.4 A   Inductor Current
+Wire Wire Line
+	4550 3350 4600 3350
+Wire Wire Line
+	4200 3350 4200 3400
+Text HLabel 3450 3950 0    51   Input ~ 0
+IN+
+Text HLabel 3450 4050 0    51   Input ~ 0
+IN-
+Wire Wire Line
+	3450 3950 4650 3950
+Wire Wire Line
+	4650 4050 3450 4050
+Text HLabel 7700 3950 2    51   Output ~ 0
+OUT+
+Text HLabel 7700 4050 2    51   Output ~ 0
+OUT-
+Text HLabel 3450 3650 0    51   Input ~ 0
+GAIN0
+Text HLabel 3450 3750 0    51   Input ~ 0
+GAIN1
+Wire Wire Line
+	4650 3650 3450 3650
+Wire Wire Line
+	3450 3750 4650 3750
+Text Notes 3450 3300 0    47   Italic 0
+Only fit with DRV2667
+$Comp
+L power:+5V #PWR064
+U 1 1 5A9AD76F
+P 4700 5550
+AR Path="/5A6B9947/5A9AD76F" Ref="#PWR064"  Part="1" 
+AR Path="/5A6D116B/5A9AD76F" Ref="#PWR074"  Part="1" 
+F 0 "#PWR074" H 4700 5400 50  0001 C CNN
+F 1 "+5V" H 4715 5723 50  0000 C CNN
+F 2 "" H 4700 5550 50  0001 C CNN
+F 3 "" H 4700 5550 50  0001 C CNN
+	1    4700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR065
+U 1 1 5A9AD91D
+P 5450 2700
+AR Path="/5A6B9947/5A9AD91D" Ref="#PWR065"  Part="1" 
+AR Path="/5A6D116B/5A9AD91D" Ref="#PWR075"  Part="1" 
+F 0 "#PWR075" H 5450 2550 50  0001 C CNN
+F 1 "+5V" H 5465 2873 50  0000 C CNN
+F 2 "" H 5450 2700 50  0001 C CNN
+F 3 "" H 5450 2700 50  0001 C CNN
+	1    5450 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2700 5450 2800
+Text HLabel 3400 3000 0    51   Input ~ 0
+EN
+Wire Wire Line
+	3400 3000 4600 3000
+Wire Wire Line
+	4600 3000 4600 3350
+Connection ~ 4600 3350
+Wire Wire Line
+	4600 3350 4650 3350
+$Comp
+L microman-kit-rescue:SYM_Flash_Large-graphic_symbols-microman-kit-rescue #SYM4
+U 1 1 5A9F3A9B
+P 8150 4000
+AR Path="/5A6B9947/5A9F3A9B" Ref="#SYM4"  Part="1" 
+AR Path="/5A6D116B/5A9F3A9B" Ref="#SYM5"  Part="1" 
+F 0 "#SYM5" V 8000 4000 50  0001 C CNN
+F 1 "SYM_Flash_Large" V 8280 4000 50  0001 C CNN
+F 2 "" H 8140 3910 50  0001 C CNN
+F 3 "~" H 8550 3900 50  0001 C CNN
+	1    8150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3300 6450 3750
+Wire Wire Line
+	6250 3750 6450 3750
+Wire Wire Line
+	6350 2900 6650 2900
+Wire Wire Line
+	6350 3350 6350 2900
+Wire Wire Line
+	6250 3550 6350 3550
+Wire Wire Line
+	6250 3350 6350 3350
+Connection ~ 6350 3350
+Wire Wire Line
+	6350 3550 6350 3350
+Text Notes 6500 3500 0    47   Italic 0
+R2
+Text Notes 6500 3100 0    47   Italic 0
+R1
+$Comp
+L power:GND #PWR070
+U 1 1 5A6E90EC
+P 6650 3700
+AR Path="/5A6B9947/5A6E90EC" Ref="#PWR070"  Part="1" 
+AR Path="/5A6D116B/5A6E90EC" Ref="#PWR080"  Part="1" 
+F 0 "#PWR080" H 6650 3450 50  0001 C CNN
+F 1 "GND" H 6655 3527 50  0000 C CNN
+F 2 "" H 6650 3700 50  0001 C CNN
+F 3 "" H 6650 3700 50  0001 C CNN
+	1    6650 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3300 7150 3400
+$Comp
+L power:GND #PWR069
+U 1 1 5A6E90E3
+P 7150 3400
+AR Path="/5A6B9947/5A6E90E3" Ref="#PWR069"  Part="1" 
+AR Path="/5A6D116B/5A6E90E3" Ref="#PWR079"  Part="1" 
+F 0 "#PWR079" H 7150 3150 50  0001 C CNN
+F 1 "GND" H 7155 3227 50  0000 C CNN
+F 2 "" H 7150 3400 50  0001 C CNN
+F 3 "" H 7150 3400 50  0001 C CNN
+	1    7150 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2900 7150 3000
+Wire Wire Line
+	6650 2900 7150 2900
+Connection ~ 6650 2900
+Wire Wire Line
+	6650 2900 6650 2950
+Wire Wire Line
+	6650 3300 6650 3350
+Wire Wire Line
+	6650 3250 6650 3300
+Wire Wire Line
+	6650 3700 6650 3650
+Connection ~ 6650 3300
+Wire Wire Line
+	6650 3300 6450 3300
+$Comp
+L device:R R10
+U 1 1 5A6E90E2
+P 6650 3100
+AR Path="/5A6B9947/5A6E90E2" Ref="R10"  Part="1" 
+AR Path="/5A6D116B/5A6E90E2" Ref="R13"  Part="1" 
+F 0 "R13" H 6720 3146 50  0000 L CNN
+F 1 "768k" H 6720 3055 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 6580 3100 50  0001 C CNN
+F 3 "" H 6650 3100 50  0001 C CNN
+	1    6650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R11
+U 1 1 5A6E90E1
+P 6650 3500
+AR Path="/5A6B9947/5A6E90E1" Ref="R11"  Part="1" 
+AR Path="/5A6D116B/5A6E90E1" Ref="R14"  Part="1" 
+F 0 "R14" H 6720 3546 50  0000 L CNN
+F 1 "13k" H 6720 3455 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 6580 3500 50  0001 C CNN
+F 3 "" H 6650 3500 50  0001 C CNN
+	1    6650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C15
+U 1 1 5A6E90DE
+P 7150 3150
+AR Path="/5A6B9947/5A6E90DE" Ref="C15"  Part="1" 
+AR Path="/5A6D116B/5A6E90DE" Ref="C20"  Part="1" 
+F 0 "C20" H 7035 3104 50  0000 R CNN
+F 1 "100n" H 7035 3195 50  0000 R CNN
+F 2 "Capacitors_SMD:C_1206" H 7188 3000 50  0001 C CNN
+F 3 "" H 7150 3150 50  0001 C CNN
+F 4 "X7R, >= 250V" H 7150 3150 50  0001 C CNN "Rating"
+	1    7150 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 4250 4650 4250
+Text Label 6250 3750 0    47   ~ 0
+FB
+Wire Wire Line
+	5550 4600 5750 4600
+Wire Wire Line
+	5750 4600 5750 4550
+Connection ~ 5550 4600
+$EndSCHEMATC

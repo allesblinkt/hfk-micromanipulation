@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name microman-kit)(type Legacy)(uri ${KIPRJMOD}/libs/microman-kit.lib)(options "")(descr ""))
+  (lib (name microman-kit-rescue)(type Legacy)(uri ${KIPRJMOD}/microman-kit-rescue.lib)(options "")(descr ""))
+)
