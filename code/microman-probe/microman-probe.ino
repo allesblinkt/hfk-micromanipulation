@@ -9,12 +9,10 @@ void setup() {
   pinMode(pin_probe, INPUT);
 }
 
-float pot_filtered = 0.0;
 
 void loop() {
-  pot_filtered = 0.99 * pot_filtered + 0.01 * analogRead(pin_pot_a);   // low pass filter pot value
-
-  int frequency = map(pot_filtered, 0, 1024, 300, 350);
+  float pot = analogRead(pin_pot_a);
+  int frequency = map(pot, 0, 1024, 300, 350);
   int period_us = 1000000L / frequency;
 
   pinMode(pin_probe, OUTPUT);
